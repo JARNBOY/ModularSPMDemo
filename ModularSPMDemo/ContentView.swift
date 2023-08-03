@@ -6,16 +6,33 @@
 //
 
 import SwiftUI
+import BaseUI
 
 struct ContentView: View {
+    
+    @State var isOpenRetryView: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        if isOpenRetryView {
+            RetryView()
+        } else {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                
+                Button {
+                    isOpenRetryView = true
+                } label: {
+                    Text("Click Text open Retry View")
+                }
+
+            }
+            .padding()
+            
         }
-        .padding()
+        
     }
 }
 

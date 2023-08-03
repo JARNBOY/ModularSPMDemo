@@ -14,6 +14,7 @@
 		CA6BE5502A7BBA4E0030179D /* ModularSPMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE54F2A7BBA4E0030179D /* ModularSPMDemoTests.swift */; };
 		CA6BE55A2A7BBA4E0030179D /* ModularSPMDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE5592A7BBA4E0030179D /* ModularSPMDemoUITests.swift */; };
 		CA6BE55C2A7BBA4E0030179D /* ModularSPMDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE55B2A7BBA4E0030179D /* ModularSPMDemoUITestsLaunchTests.swift */; };
+		CA6BE56B2A7BC6A00030179D /* BaseUI in Frameworks */ = {isa = PBXBuildFile; productRef = CA6BE56A2A7BC6A00030179D /* BaseUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CA6BE5552A7BBA4E0030179D /* ModularSPMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularSPMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6BE5592A7BBA4E0030179D /* ModularSPMDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularSPMDemoUITests.swift; sourceTree = "<group>"; };
 		CA6BE55B2A7BBA4E0030179D /* ModularSPMDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularSPMDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA6BE5682A7BBD600030179D /* BaseUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BaseUI; path = ../../BaseUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6BE56B2A7BC6A00030179D /* BaseUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,7 @@
 				CA6BE54E2A7BBA4E0030179D /* ModularSPMDemoTests */,
 				CA6BE5582A7BBA4E0030179D /* ModularSPMDemoUITests */,
 				CA6BE53C2A7BBA4C0030179D /* Products */,
+				CA6BE5692A7BC6A00030179D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,7 @@
 		CA6BE53D2A7BBA4C0030179D /* ModularSPMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA6BE5682A7BBD600030179D /* BaseUI */,
 				CA6BE53E2A7BBA4C0030179D /* ModularSPMDemoApp.swift */,
 				CA6BE5402A7BBA4C0030179D /* ContentView.swift */,
 				CA6BE5422A7BBA4E0030179D /* Assets.xcassets */,
@@ -127,6 +132,13 @@
 			path = ModularSPMDemoUITests;
 			sourceTree = "<group>";
 		};
+		CA6BE5692A7BC6A00030179D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = ModularSPMDemo;
+			packageProductDependencies = (
+				CA6BE56A2A7BC6A00030179D /* BaseUI */,
+			);
 			productName = ModularSPMDemo;
 			productReference = CA6BE53B2A7BBA4C0030179D /* ModularSPMDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -577,6 +592,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA6BE56A2A7BC6A00030179D /* BaseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BaseUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA6BE5332A7BBA4C0030179D /* Project object */;
 }
